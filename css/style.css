@@ -1,0 +1,103 @@
+html * {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.calc-title {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 5%;
+    
+
+}
+.calc-subtitle {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+
+.background {
+
+    background: black;
+}
+
+.calc-body {
+    position: absolute;    
+    top: -100px;  
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.button-gray {
+    background-color: #A0A0A0;
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+    border-radius: 200px;
+    margin: 3px;
+    
+
+}
+.button-darkgray {
+    background-color: #313131;
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    font-weight: 450;
+    color: white;
+    border-radius: 200px;
+    margin: 3px;
+   
+   
+
+}
+.button-orange {
+    background-color: #F69906;
+    width: 80px;
+    height: 80px;
+    font-size: 35px;
+    font-weight: 400;
+    color: white;
+    border-radius: 200px;
+    margin: 3px;
+    text-align: center;  
+    
+}
+.button-darkgray:active {
+    animation-name: btn-flash;
+    animation-duration: 0.1s; 
+  }
+  @keyframes btn-flash {
+    from {
+      color: white;
+      background:#313131 ;
+      outline-offset: 0;
+    }
+    
+    to {
+      color: white;
+      background: #616161;
+    }
+  }
+
+.result {
+    color: white;
+    text-align:right;
+    font-size: 100px;
+    background-color: black;
+    height: 135px;
+    width: 150px;
+    margin: 3px;
+    
+
+
+}
+
