@@ -3,7 +3,6 @@ html * {
     margin: 0;
     padding: 0;
 
-
 }
 
 .calc-title {
@@ -11,9 +10,9 @@ html * {
     text-align: center;
     font-size: 50px;
     padding-top: 5%;
-    
 
 }
+
 .calc-subtitle {
     color: white;
     text-align: center;
@@ -26,8 +25,8 @@ html * {
 }
 
 .calc-body {
-    position: absolute;    
-    top: -100px;  
+    position: absolute;
+    top: -100px;
     left: 50%;
     transform: translate(-50%, 50%);
     border-radius: 15px;
@@ -43,9 +42,9 @@ html * {
     color: black;
     border-radius: 200px;
     margin: 3px;
-    
 
 }
+
 .button-darkgray {
     background-color: #313131;
     width: 80px;
@@ -55,10 +54,9 @@ html * {
     color: white;
     border-radius: 200px;
     margin: 3px;
-   
-   
 
 }
+
 .button-orange {
     background-color: #F69906;
     width: 80px;
@@ -68,36 +66,74 @@ html * {
     color: white;
     border-radius: 200px;
     margin: 3px;
-    text-align: center;  
-    
+    text-align: center;
+
 }
+
 .button-darkgray:active {
-    animation-name: btn-flash;
-    animation-duration: 0.1s; 
-  }
-  @keyframes btn-flash {
+    animation-name: btn-flash-darkgray;
+    animation-duration: 100ms;
+}
+
+.button-gray:active {
+    animation-name: btn-flash-gray;
+    animation-duration: 100ms;
+}
+
+.button-orange:active {
+    animation-name: btn-flash-orange;
+    animation-duration: 100ms;
+
+}
+
+@keyframes btn-flash-darkgray {
     from {
-      color: white;
-      background:#313131 ;
-      outline-offset: 0;
+        color: white;
+        background: #313131;
+        outline-offset: 0;
     }
-    
+
     to {
-      color: white;
-      background: #616161;
+        color: white;
+        background: #616161;
     }
-  }
+}
+
+@keyframes btn-flash-gray {
+    from {
+        color: black;
+        background: #A0A0A0;
+        outline-offset: 0;
+    }
+
+    to {
+        color: black;
+        background: #B8B8B8;
+    }
+}
+
+@keyframes btn-flash-orange {
+    from {
+        color: white;
+        background: #F69906;
+        outline-offset: 0;
+    }
+
+    to {
+        color: orange;
+        background: white;
+    }
+}
 
 .result {
     color: white;
-    text-align:right;
+    text-align: right;
     font-size: 100px;
     background-color: black;
     height: 135px;
     width: 150px;
     margin: 3px;
-    
-
+    word-wrap: break-all;
+    word-break: break-all;
 
 }
-
